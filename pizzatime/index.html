@@ -8,28 +8,50 @@
     <head> 
         <title>Jacob's Pizzeria</title>	
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			body {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			content {
+				margin: auto;
+				max-width: 900px;
+				background-color:#FFFF6D;
+			}
+			.clear-float {
+				clear:both;
+			}
+			
+		</style>
     </head> 
     
     <body>
         <header>
             <h1>Jacob's Pizzeria</h1>
         </header>
-		<hr />
         <nav>
 		<p>
 		<a href="index.html">Home</a>
 		<a href="menu.html">Menu</a>
 		<a href="contact.html">Contact Us</a>
+		<div class="clear-float"></div>
 		</p>
         </nav>
-		<hr />
-		<img src="images/jacoblogo.bmp" alt="The logo of this fine pizzeria!" style="border: thick red solid;" width=400px />
+		<content>
+		<article>
+		<img src="images/jacoblogo.bmp" alt="The logo of this fine pizzeria!" style="float:center;" width=400px />
+		<div class="clear-float"></div>
+		</article>
+		<article>
 		<p>
 			Hello, and welcome to Jacob's Pizzeria! We do one thing, and one thing only: We make pizzas. We're good at it, too.<br />
 			Why are you sitting here reading this? There are other pages to browse!<br />
 			<span style="font-size:8px;">Seriously, there's no more content on this page, look elsewhere please.</span>
 		</p>
+		<div class="clear-float"></div>
 		<hr />
+		</article>
+		</content>
         <footer>
 			<p>123 Incoherence Ln, Whatopolis, Denial, 52222<br />
 			(939) 999 - 9999<br />

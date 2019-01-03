@@ -5,9 +5,36 @@
 */
 
 header, footer {
-    background-color: #5b7d87;
-    color: #fef9ff;
+    background-color: #7F6E1A;
+    color: #FFFF89;
     height: 100px;
     text-align: center;
     padding: 30px 10px 20px 10px;
 }
+nav {
+    border-top: 3px dashed #FFD930;
+    border-bottom: 3px dashed #FFD930;
+    margin-top: 4px;
+}
+
+nav a {
+				color: #fef9ff;
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-top: 2px;
+				margin-bottom: 2px;
+				float:left;
+			}
+
+			nav a:visited {
+				color: #e4c3ad; 
+			}
+
+			nav a:hover {
+			background-color: #fef9ff;
+				color: #5b7d87; 
+			}
+
+			nav a:active {
+				font-weight: bold;
+			}
