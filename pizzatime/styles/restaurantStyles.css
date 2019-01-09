@@ -27,14 +27,15 @@ nav a {
 			}
 
 			nav a:visited {
-				color: #e4c3ad; 
+				color: red; 
 			}
 
 			nav a:hover {
 			background-color: #fef9ff;
+			font-weight: bold;
 				color: #5b7d87; 
 			}
 
 			nav a:active {
-				font-weight: bold;
+				text-decoration: none;
 			}
