@@ -8,30 +8,53 @@
     <head> 
         <title>Jacob's Pizzeria</title>
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			body {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			content {
+				display:block;
+				max-width: 900px;
+				background-color:#FFFF6D;
+			}
+			.clear-float {
+				clear:both;
+			}
+			/*
+			:required {
+				font-weight:bold;
+				}
+				As much as I wanted to use this, it modifies the inputs,
+				not the labels. Oh well.
+			*/
+			.rqd {
+				font-weight:bold;
+			}
+		</style>
     </head> 
     
     <body>
         <header>
             <h1>Jacob's Pizzeria</h1>
         </header>
-		<hr />
         <nav>
 		<p>
 		<a href="index.html">Home</a>
 		<a href="menu.html">Menu</a>
 		<a href="contact.html">Contact Us</a>
+		<div class="clear-float"></div>
 		</p>
         </nav>
-		<hr />
 		<content>
 			<form>
-				<label for="name">Name:</label>
+				<label for="name" class="rqd">Name:</label>
 				<input type="text" id="name" name="name" required><br />
-				<label for="email">Email:</label>
+				<label for="email" class="rqd">Email:</label>
 				<input type="text" id="email" name="email" required><br />
-				<label for="phone">Phone:</label>
+				<label for="phone" class="rqd">Phone:</label>
 				<input type="text" id="phone" name="phone" required><br />
-				<label for="reason">Reason for Inquiry:</label>
+				<label for="reason" class="rqd">Reason for Inquiry:</label>
 				<select id="reason" name="reason" required>
 					<option value="catering" selected>Catering</option>
 					<option value="party">Private Party</option>
@@ -39,10 +62,10 @@
 					<option value="other">Other</option>
 				</select>
 				<br />
-				<label for="info">Additional Information:</label>
+				<label for="info" class="rqd">Additional Information:</label>
 				<textarea id="info" name="info" required></textarea><br />
 				<fieldset>
-					<legend>Have you been to the restaurant?</legend>
+					<legend class="rqd">Have you been to the restaurant?</legend>
 					<input type="radio" id="choiceyes" name="past-client" value="yes" required>
 					<label for="choiceyes">Yes</label>
 					<input type="radio" id="choiceno" name="past-client" value="no">
@@ -65,9 +88,8 @@
 				<br />
 				<input type="submit" name="submit" value="Send Request">
 			</form>
-			<p>All fields are required</p>
+			<p style="margin-bottom:0px;">Required fields are bolded.</p>
 		</content>
-		<hr />
         <footer>
 			123 Incoherence Ln, Whatopolis, Denial, 52222<br />
 			(939) 999 - 9999
