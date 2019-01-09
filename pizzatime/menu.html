@@ -8,21 +8,37 @@
     <head> 
         <title>Jacob's Pizzeria</title>	
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+		body {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			content {
+				display:block;
+				max-width: 900px;
+				background-color:#FFFF6D;
+			}
+			.clear-float {
+				clear:both;
+			}
+			th {
+				font-size:110%;
+			}
+		</style>
     </head> 
     
     <body>
         <header>
             <h1>Jacob's Pizzeria</h1>
         </header>
-		<hr />
         <nav>
 		<p>
 		<a href="index.html">Home</a>
 		<a href="menu.html">Menu</a>
 		<a href="contact.html">Contact Us</a>
 		</p>
+		<div class="clear-float"></div>
         </nav>
-		<hr />
 		<content>
 		<table>
 			<tr>
@@ -47,7 +63,6 @@
 			</tr>
 		</table>
 		</content>
-		<hr />
         <footer>
 			123 Incoherence Ln, Whatopolis, Denial, 52222<br />
 			(939) 999 - 9999
