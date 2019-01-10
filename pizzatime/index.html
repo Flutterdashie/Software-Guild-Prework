@@ -11,21 +11,6 @@
         <title>Jacob's Pizzeria</title>	
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-		<style>
-			body {
-				max-width: 900px;
-				margin: 0 auto;
-			}
-			content {
-				display:block;
-				max-width: 900px;
-				background-color:#FFFF6D;
-			}
-			.clear-float {
-				clear:both;
-			}
-			
-		</style>
     </head> 
     
     <body>
@@ -46,19 +31,41 @@
 				<a class="nav-link" href="contact.html">Contact Us</a>
 			</li>
 		</ul>
-		<content>
-		<article>
-		<img src="images/jacoblogo.bmp" alt="The logo of this fine pizzeria!" style="margin:auto; display: block;" width=400px />
-		<div class="clear-float"></div>
-		</article>
-		<article>
-		<p style="margin-bottom:0px;">
+		
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<p class="carousel-part">We're opening a new location!</p>
+				</div>
+			<div class="carousel-item">
+				<p class="carousel-part">Seasonal menu coming soon!</p>
+			</div>
+			<div class="carousel-item">
+				<p class="carousel-part">Drink of the Month is SG Special Brew!</p>
+			</div>
+		</div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+		<div class="container">
+		<div class="row">
+			<img src="images/jacoblogo.bmp" alt="The logo of this fine pizzeria!" style="margin:auto; display: block;" />
+		</div>
+		<div class="row">
+			<p style="margin-bottom:0px;">
 			Hello, and welcome to Jacob's Pizzeria! We do one thing, and one thing only: We make pizzas. We're good at it, too.<br />
 			Why are you sitting here reading this? There are other pages to browse!<br />
 			<span style="font-size:8px;">Seriously, there's no more content on this page, look elsewhere please.</span>
-		</p>
-		</article>
-		</content>
+			</p>
+		</div>
+		</div>
         <footer>
 			<p>123 Incoherence Ln, Whatopolis, Denial, 52222<br />
 			(939) 999 - 9999<br />

@@ -17,3 +17,8 @@ header h1 {
 .important {
 	font-size:125%;
 }
+p.carousel-part {
+	background-color:#FFFF6D;
+	text-align:center;
+	font-size:200%;
+}
