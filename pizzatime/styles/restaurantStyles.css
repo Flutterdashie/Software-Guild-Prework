@@ -14,11 +14,6 @@ header, footer {
 header h1 {
 	font-family: 'Charm', cursive;
 }
-nav {
-    border-top: 3px dashed #FFD930;
-    border-bottom: 3px dashed #FFD930;
-    margin-top: 4px;
-}
 
 nav a {
 				color: #fef9ff;
