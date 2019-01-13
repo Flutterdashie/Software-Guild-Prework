@@ -2,7 +2,7 @@
 <!--
     Name: Jacob Harris 
     Date Created: 1/3/19
-    Most recent revision: 1/10/19
+    Most recent revision: 1/13/19
 -->
 <html lang="en"> 
     <head>
@@ -35,6 +35,33 @@
 				font-weight:bold;
 			}
 		</style>
+		<script>
+			function validateForm() {
+				var forms = document.getElementsByClassName("needs-validation");
+				if (forms.length != 0)
+				{
+					if (forms[0].checkValidity() === false)
+					{
+						alert("Form is invalid and has not been submitted.");
+					}
+					else if(forms[0].checkValidity() === true)
+					{
+						alert("Form is valid and has been submitted.");
+					}
+					else
+					{
+						alert("An error has occurred. Please refresh the page and try again.");
+					}
+				}
+				else
+				{
+					alert("An error has occurred. Please refresh the page and try again.");
+				}
+			
+			}
+		
+		</script>
+		
     </head> 
     
     <body>
@@ -57,23 +84,33 @@
 			</li>
 		</ul>
 		<content>
-			<form>
+			<form class="needs-validation">
+			<div class="form-group">
 				<label for="name" class="rqd">Name:</label>
-				<input type="text" id="name" name="name" required><br />
+				<input class="form-control needs-validation" type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
 				<label for="email" class="rqd">Email:</label>
-				<input type="text" id="email" name="email" required><br />
+				<input class="form-control" type="text" id="email" name="email" required>
+			</div>
+			<div class="form-group">
 				<label for="phone" class="rqd">Phone:</label>
-				<input type="text" id="phone" name="phone" required><br />
+				<input class="form-control" type="text" id="phone" name="phone" required>
+			</div>
+			<div class="form-group">
 				<label for="reason" class="rqd">Reason for Inquiry:</label>
-				<select id="reason" name="reason" required>
+				<select class="form-control" id="reason" name="reason" required>
 					<option value="catering" selected>Catering</option>
 					<option value="party">Private Party</option>
 					<option value="feedback">Feedback</option>
 					<option value="other">Other</option>
 				</select>
-				<br />
+			</div>
+			<div class="form-group">
 				<label for="info" class="rqd">Additional Information:</label>
-				<textarea id="info" name="info" required></textarea><br />
+				<textarea class="form-control" id="info" name="info" required></textarea>
+			</div>
+			<div class="form-group">
 				<fieldset>
 					<legend class="rqd">Have you been to the restaurant?</legend>
 					<input type="radio" id="choiceyes" name="past-client" value="yes" required>
@@ -81,7 +118,8 @@
 					<input type="radio" id="choiceno" name="past-client" value="no">
 					<label for="choiceno">No</label>
 				</fieldset>
-				<br />
+			</div>
+			<div class="form-group">
 				<fieldset>
 					<legend>Best days to contact you:</legend>
 					<input type="checkbox" id="Mon" name="contact-days" value="M">
@@ -95,8 +133,10 @@
 					<input type="checkbox" id="Fri" name="contact-days" value="F">
 					<label for="Fri">F</label>
 				</fieldset>
-				<br />
-				<input type="submit" name="submit" value="Send Request">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit" onclick="validateForm()">Send Request</button>
+			</div>
 			</form>
 			<p style="margin-bottom:0px;">Required fields are bolded.</p>
 		</content>
